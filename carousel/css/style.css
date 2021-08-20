@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  height: 80vh;
+  width: 100%;
+}
+
+#items-wrapper {
+  width: 60vw;
+}
+
+#items-wrapper #items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+#items-wrapper #items .item {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 80%;
+  height: 400px;
+  scroll-snap-align: start;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+}
+
+#items-wrapper #items .item:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+#items-wrapper #items .item .ProjectsContent {
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+}
+
+#items-wrapper #items .item .ProjectsContent.letmeask {
+  background: #9d7dfe;
+}
+
+#items-wrapper #items .item .ProjectsContent.senai {
+  background: rgba(26, 27, 31, 0.644);
+}
+
+#items-wrapper #items .item .ProjectsContent.spring {
+  background: #a7683bfa;
+}
+
+#items-wrapper #items .item .ProjectsContent .LetMeAskContent {
+  max-width: 1200px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#items-wrapper #items .item .ProjectsContent .SenaiVagasContent {
+  max-width: 1200px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#items-wrapper #items .item .ProjectsContent .SpringBankContent {
+  max-width: 1200px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#items-wrapper #items .item .ProjectsContent p,
+#items-wrapper #items .item .ProjectsContent h1 {
+  color: #fff;
+}
+
+#items-wrapper #items .item .ProjectsContent h1 {
+  font-size: 3rem;
+}
+
+#items-wrapper #items .item .ProjectsContent p {
+  height: 100%;
+  font-size: 1.1rem;
+  max-width: 600px;
+  max-height: 100px;
+}
+/*# sourceMappingURL=style.css.map */

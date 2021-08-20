@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  height: 80vh;
+  width: 100%;
+}
+
+.Container-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  -ms-grid-rows: 210px 210px 80px;
+      grid-template-rows: 210px 210px 80px;
+      grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: white;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: Inter, sans-serif;
+  text-align: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card .card-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-image .impacta {
+  height: 90%;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .card-image .senai {
+  height: 35%;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .card-image .tobias {
+  height: 35%;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .card-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  padding: 1rem 2rem;
+}
+
+.card .card-text .date {
+  font-size: 13px;
+}
+
+.card .card-text .date.impacta {
+  color: #1b5a7d;
+}
+
+.card .card-text .date.senai {
+  color: #e30613;
+}
+
+.card .card-text .date.tobias {
+  color: #00388a;
+}
+
+.card .card-text p {
+  color: #474747;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+  width: 100%;
+}
+
+.card .card-text p strong {
+  color: #383838;
+}
+
+.card .card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.card .card-stats {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: stats;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card .card-stats.impacta {
+  background: #1b5a7d;
+}
+
+.card .card-stats.senai {
+  background: #e30613;
+}
+
+.card .card-stats.tobias {
+  background: #00388a;
+}
+
+.card .card-stats .stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+
+.card .card-stats .stat span {
+  font-size: 0.875rem;
+}
+/*# sourceMappingURL=style.css.map */

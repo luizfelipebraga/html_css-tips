@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+section {
+    height: 80vh;
+    width: 100%;
+}
+
+#items-wrapper {
+    width: 60vw;
+
+    #items {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+
+        .item {
+            flex: none;
+
+            width: 80%;
+            height: 400px;
+
+            scroll-snap-align: start;
+
+            transition: filter 0.2s;
+
+            &:hover {
+                filter: brightness(1.2);
+            }
+
+            .ProjectsContent {
+                width: 100%;
+                height: 100%;
+
+                padding: 100px;
+
+                &.letmeask {
+                    background: #9d7dfe;
+                }
+
+                &.senai {
+                    background: rgba(26, 27, 31, 0.644);
+                }
+
+                &.spring {
+                    background: #a7683bfa;
+                }
+
+                .LetMeAskContent {
+                    max-width: 1200px;
+                    height: 100%;
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .SenaiVagasContent {
+                    max-width: 1200px;
+                    height: 100%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .SpringBankContent {
+                    max-width: 1200px;
+                    height: 100%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                p,
+                h1 {
+                    color: #fff;
+                }
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    height: 100%;
+                    font-size: 1.1rem;
+                    max-width: 600px;
+                    max-height: 100px;
+                }
+            }
+        }
+    }
+}
